@@ -1,0 +1,99 @@
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Basic Reset and Body Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* Navigation Bar */
+.navbar {
+  position: fixed;         /* Fixed at top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #0A1172;
+  padding: 10px 20px;
+  z-index: 1000;           /* Ensures nav stays above other elements */
+  
+}
+
+/* Navigation Links */
+.nav-link {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 20px;
+  transition: background 0.3s ease;
+}
+
+/* Active Link */
+.nav-link.active {
+  background-color: white;
+  color: #0A1172;
+  font-weight: bold;
+}
+
+/* Hover Effect */
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Sections */
+.section {
+  min-height: 100vh;       /* Each section takes up full viewport height */
+  padding: 80px 20px;      /* Extra top padding so content isn't hidden behind fixed nav */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.5s;
+  background-color: #e9ecef;
+}
+
+.section:nth-of-type(odd) {
+  background-color: #ffffff;
+}
+
+.section:nth-of-type(even) {
+  background-color: #e9ecef;
+}
+
+.dark-theme .section:nth-of-type(odd) {
+  background-color: #333333; /* dark gray */
+}
+
+.dark-theme .section:nth-of-type(even) {
+  background-color: #000000; /* black */
+}
+
+.dark-theme .section {
+  color: #ffffff; /* light text on dark background */
+}
+
+.planet-button {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(to right, #3b82f6, #9333ea);
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
