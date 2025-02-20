@@ -16,13 +16,28 @@
     <a href="#about" class="nav-link">About</a>
     <a href="#projects" class="nav-link">Projects</a>
     </div>
-    <button onclick="darkModeButton()" id="planet-button" class="planet-button">🌍</button>
+    <button onclick="darkModeButton()" id="planet-button" class="planet-button"><div class="planet-item" id="planet-item">🌍</div></button>
   </nav>
 
   <!-- Sections -->
   <section id="home" class="section">
-    <h1>Welcome to My Portfolio</h1>
-    <p>Home section content goes here.</p>
+    <a href="project-page.html" class="project-card">
+      <!-- Left Side: Text -->
+      <div class="project-info">
+        <h2>Project Title</h2>
+        <p>
+          A short description of the project. Highlights key features and functionality.
+        </p>
+      </div>
+
+      <!-- Right Side: Image & Tech Logos -->
+      <div class="project-media">
+        <img src="project-image.jpg" alt="Project Preview" class="project-image">
+        <div class="tech-logos">
+
+        </div>
+      </div>
+    </a>
   </section>
 
   <section id="about" class="section">

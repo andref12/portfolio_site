@@ -1,6 +1,6 @@
 function darkModeButton(){
 	document.body.classList.toggle('dark-theme');
-	const button = document.getElementById('planet-button')
+	const button = document.getElementById('planet-item')
 	if (!button.style.transform || button.style.transform === 'rotate(0deg)') {
     	button.style.transform = 'rotate(180deg)';
   	}
