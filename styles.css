@@ -158,6 +158,10 @@ body {
   background: #e9ecef;
 }
 
+.dark-theme .project-media {
+  background: #000000;
+}
+
 /* Project Image */
 .project-image {
   width: 100%;
