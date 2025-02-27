@@ -10,6 +10,11 @@ function darkModeButton(){
 
 }
 
+function openArticle(url) {
+  window.open(url, '_blank');
+}
+
+
 // Select all sections
 const sections = document.querySelectorAll("section");
 
