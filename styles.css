@@ -127,6 +127,10 @@ body {
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
+.dark-theme .project-card {
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
 /* Left Side: Project Info */
 .project-info {
   flex: 1; /* Takes up remaining space */
@@ -159,7 +163,7 @@ body {
 }
 
 .dark-theme .project-media {
-  background: #333333;
+  color: #000000;
 }
 
 /* Project Image */
@@ -231,8 +235,13 @@ body {
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
+  width: 90%;
+  max-width: 700px;
   text-align: center;
+}
+
+.dark-theme .article-card {
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
 }
 
 .article-card.dark {
@@ -251,7 +260,7 @@ body {
 }
 
 .article-button {
-  background-color: #007BFF;
+  background-color: #0A1172;
   color: white;
   padding: 10px 15px;
   border: none;
