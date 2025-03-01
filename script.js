@@ -14,6 +14,16 @@ function openArticle(url) {
   window.open(url, '_blank');
 }
 
+function toggleMenu() {
+    const menu = document.getElementById("mobileMenu");
+    menu.classList.toggle("show");
+}
+
+document.querySelectorAll(".mobile-menu a").forEach(link => {
+    link.addEventListener("click", () => {
+        document.getElementById("mobileMenu").classList.remove("show");
+    });
+});
 
 // Select all sections
 const sections = document.querySelectorAll("section");

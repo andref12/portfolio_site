@@ -11,15 +11,29 @@
 
   <!-- Navigation Bar -->
   <nav class="navbar">
-    <div></div>
+    <div class="logo-image">
+      <img src="images\logo.png">
+    </div>
     <div class="nav-center">
     <a href="#about" class="nav-link">About</a>
     <a href="#projects" class="nav-link">Projects</a>
-    <a href="#academic" class="nav-link active">Academic</a>
-    <a href="#contact" class="nav-link active">Contact</a>
+    <a href="#academic" class="nav-link">Academic</a>
+    <a href="#contact" class="nav-link">Contact</a>
     </div>
+    <div class="buttons-div">
     <button onclick="darkModeButton()" id="planet-button" class="planet-button"><div class="planet-item" id="planet-item">🌍</div></button>
+
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </div>
   </nav>
+
+  <ul class="mobile-menu" id="mobileMenu">
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#academic">Academic</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
 
   <!-- Sections -->
   
@@ -31,10 +45,8 @@
       <div class="about-text">
       <h2>About Me</h2>
       <p>
-        Hi, I'm André Flaiban, a passionate [Your Profession] with experience in [Your Skills/Expertise]. 
-        I specialize in creating modern, efficient, and user-friendly solutions. 
-        Welcome to my portfolio!
-      </p>
+      I'm an Electrical Engineer who specilizes in embedded devices, automotive design, and wireless communications. I have experience in embedded systems applications with ARM Cortex M processors/microcontrollers, RTOS, , UWB, and Python. Also, I have developed research in massive MIMO, reconfigurable intelligent surfaces, resource allocation, machine learning, and optimization methods.
+      </p> 
       </div>
     </div>
   </section>

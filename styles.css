@@ -156,6 +156,10 @@ body {
   line-height: 1.5;
 }
 
+.dark-theme .project-info p{
+  color: #e0e0e0;
+}
+
 /* Right Side: Image & Tech Logos */
 .project-media {
   flex-grow: 0.4; /* 40% width dynamically */
@@ -193,8 +197,25 @@ body {
   object-fit: contain;
 }
 
+.buttons-div {
+  display: flex;
+  align: center;
+  flex-direction: row;
+}
+
+/* Hamburger menu (hidden by default) */
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
 /* RESPONSIVE: Switch to vertical layout on small screens */
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .project-card {
     flex-direction: column;
     max-width: 100%;
@@ -204,7 +225,54 @@ body {
     width: 100%;
     padding: 15px;
   }
+
+  .nav-link {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
 }
+
+@media (max-width: 600px) {
+  .about-me {
+    flex-direction: column;
+    max-width: 100%;
+  }
+}
+
+/* Mobile menu (hidden by default) */
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #0A1172;
+    position: fixed;
+    top: 60px;
+    width: 100%;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    z-index: 1000;
+}
+
+.mobile-menu li {
+    list-style: none;
+    padding: 10px;
+    text-align: center;
+}
+
+.mobile-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    display: block;
+}
+
+/* Show mobile menu when active */
+.mobile-menu.show {
+    display: flex;
+}
+
 
 .about-me {
   display: flex;
@@ -231,7 +299,7 @@ body {
 }
 
 .dark-theme .about-text {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .article-card {
@@ -249,11 +317,6 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   background-color: #1a1a1a;
   color: #e0e0e0;
-}
-
-.article-card.dark {
-  background-color: #333333;
-  color: #ffffff;
 }
 
 .article-title {
@@ -278,4 +341,15 @@ body {
 
 .article-button:hover {
   background-color: #0056b3;
+}
+
+.logo-image img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px; /* Adjust as needed */
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #0A1172;
 }
