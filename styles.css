@@ -68,6 +68,10 @@ body {
   background-color: #e9ecef;
 }
 
+.section-contact {
+  min-height: 15vh;
+}
+
 .section:nth-of-type(odd) {
   background-color: #ffffff;
 }
