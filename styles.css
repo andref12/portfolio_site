@@ -1,9 +1,8 @@
-/* Smooth Scrolling */
 html {
   scroll-behavior: smooth;
 }
 
-/* Basic Reset and Body Styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -15,9 +14,8 @@ body {
   background-color: #f8f9fa;
 }
 
-/* Navigation Bar */
 .navbar {
-  position: fixed;         /* Fixed at top */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -25,11 +23,9 @@ body {
   justify-content: space-between;
   background-color: #0A1172;
   padding: 10px 20px;
-  z-index: 1000;           /* Ensures nav stays above other elements */
-  
+  z-index: 1000; 
 }
 
-/* Navigation Links */
 .nav-link {
   text-decoration: none;
   color: white;
@@ -44,7 +40,6 @@ body {
   gap: 15px;
 }
 
-/* Active Link */
 .nav-link.active {
   background-color: white;
   color: #0A1172;
@@ -58,8 +53,8 @@ body {
 
 /* Sections */
 .section {
-  min-height: 100vh;       /* Each section takes up full viewport height */
-  padding: 80px 20px;      /* Extra top padding so content isn't hidden behind fixed nav */
+  min-height: 100vh;
+  padding: 80px 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -70,6 +65,7 @@ body {
 
 .section-contact {
   min-height: 15vh;
+  gap: 30px;
 }
 
 .section:nth-of-type(odd) {
@@ -89,7 +85,7 @@ body {
 }
 
 .dark-theme .section {
-  color: #ffffff; /* light text on dark background */
+  color: #ffffff;
 }
 
 .planet-button {
@@ -111,11 +107,10 @@ body {
   transition: transform 0.5s;
 }
 
-/* Clickable Project Card */
 .project-card {
   display: flex;
-  width: 90%; /* Adjusts to screen size */
-  max-width: 700px; /* Prevents getting too wide */
+  width: 90%;
+  max-width: 700px;
   background: white;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
@@ -125,7 +120,6 @@ body {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Hover effect */
 .project-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
@@ -133,12 +127,10 @@ body {
 
 .dark-theme .project-card {
   background: #333333;
-  /*box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);*/
 }
 
-/* Left Side: Project Info */
 .project-info {
-  flex: 1; /* Takes up remaining space */
+  flex: 1;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -164,10 +156,9 @@ body {
   color: #e0e0e0;
 }
 
-/* Right Side: Image & Tech Logos */
 .project-media {
-  flex-grow: 0.4; /* 40% width dynamically */
-  min-width: 150px; /* Prevents shrinking too much */
+  flex-grow: 0.4;
+  min-width: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -179,7 +170,6 @@ body {
   color: #000000;
 }
 
-/* Project Image */
 .project-image {
   width: 100%;
   height: auto;
@@ -188,7 +178,6 @@ body {
   border-radius: 8px;
 }
 
-/* Tech Logos */
 .tech-logos {
   display: flex;
   gap: 10px;
@@ -207,7 +196,6 @@ body {
   flex-direction: row;
 }
 
-/* Hamburger menu (hidden by default) */
 .hamburger {
     display: none;
     font-size: 2rem;
@@ -218,7 +206,6 @@ body {
     margin-left: 10px;
 }
 
-/* RESPONSIVE: Switch to vertical layout on small screens */
 @media (max-width: 700px) {
   .project-card {
     flex-direction: column;
@@ -246,7 +233,6 @@ body {
   }
 }
 
-/* Mobile menu (hidden by default) */
 .mobile-menu {
     display: none;
     flex-direction: column;
@@ -272,11 +258,9 @@ body {
     display: block;
 }
 
-/* Show mobile menu when active */
 .mobile-menu.show {
     display: flex;
 }
-
 
 .about-me {
   display: flex;
@@ -288,7 +272,7 @@ body {
 }
 
 .about-image img {
-  width: 150px; /* Adjust as needed */
+  width: 150px;
   height: 150px;
   object-fit: cover;
   border-radius: 50%;
@@ -351,9 +335,39 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px; /* Adjust as needed */
+  width: 40px;
   height: 40px;
   object-fit: cover;
   border-radius: 50%;
   border: 3px solid #0A1172;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 10px;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.github {
+    background-color: #000;
+}
+
+.linkedin {
+    background-color: #000;
+}
+
+.btn:hover {
+    background-color: #0A1172;
 }
