@@ -325,6 +325,8 @@ body {
   border-radius: 8px;
   cursor: pointer;
   margin-top: 10px;
+  font-size: 0.8rem;
+  text-decoration: none;
 }
 
 .article-button:hover {
